@@ -1,0 +1,20 @@
+<idea-plugin>
+    <id>com.your.company.my_gradle_plugin</id>
+    <name>name</name>
+    <vendor email="company.com" url="company.com">Company</vendor>
+
+    <description>
+        Shows AST and some additional information about the selected code section
+    </description>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="ShowASTAction" class="ShowASTAction" text="Show AST"
+                description="Shows AST and some additional information about the selected code section">
+            <add-to-group group-id="ToolbarRunGroup" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
